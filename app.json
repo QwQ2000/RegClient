@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/reg/reg",
+    "pages/acc/acc",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/reg/reg",
+        "text":"打卡"
+    },{
+      "pagePath":"pages/acc/acc",
+      "text":"账户"
+    }]
+  }
+}
