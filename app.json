@@ -2,7 +2,8 @@
   "pages":[
     "pages/reg/reg",
     "pages/acc/acc",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/con/cont"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,12 +12,23 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
+    "selectedColor":"#000000",
+    "backgroundColor":"#eeeeee",
     "list":[{
       "pagePath":"pages/reg/reg",
-        "text":"打卡"
+      "text":"作息",
+      "iconPath":"./res/icons/reg.png",
+      "selectedIconPath":"./res/icons/regs.png"
+    },{
+      "pagePath":"pages/con/cont",
+      "text":"比赛",
+      "iconPath":"./res/icons/cont.png",
+      "selectedIconPath":"./res/icons/conts.png"
     },{
       "pagePath":"pages/acc/acc",
-      "text":"账户"
+      "text":"账户",
+      "iconPath":"./res/icons/acc.png",
+      "selectedIconPath":"./res/icons/accs.png"
     }]
   }
 }
