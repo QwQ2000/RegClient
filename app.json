@@ -3,7 +3,7 @@
     "pages/reg/reg",
     "pages/acc/acc",
     "pages/index/index",
-    "pages/con/cont"
+    "pages/cont/cont"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,7 +20,7 @@
       "iconPath":"./res/icons/reg.png",
       "selectedIconPath":"./res/icons/regs.png"
     },{
-      "pagePath":"pages/con/cont",
+      "pagePath":"pages/cont/cont",
       "text":"比赛",
       "iconPath":"./res/icons/cont.png",
       "selectedIconPath":"./res/icons/conts.png"
