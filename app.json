@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/reg/reg",
     "pages/acc/acc",
+    "pages/reg/reg",
+    
     "pages/index/index",
     "pages/cont/cont"
   ],

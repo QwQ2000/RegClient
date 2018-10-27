@@ -5,8 +5,13 @@ Page({
    * 页面的初始数据1
    */
   data: {
-
+    getuptime:'6:00',
+    name:'你的名字',
+    gobedtime:'21:30',
   },
+
+changegetuptime:function(){},
+changegobedtime: function () { },
 
   /**
    * 生命周期函数--监听页面加载

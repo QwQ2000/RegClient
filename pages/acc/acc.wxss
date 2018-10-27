@@ -1,1 +1,69 @@
 /* pages/acc/acc.wxss */
+page{
+  background-color: #ddd;
+}
+.user-image{
+  background: #aaa;
+  width:200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+}
+.name-text{
+  display: flex;
+  //align-items: center;
+  background: #fff;
+  width: 100%;
+  margin-top: 100rpx;
+  margin-left: auto;
+  height:200rpx; 
+}
+.user-name{
+  font-size-adjust: larger;
+  background: #ddd;
+  //text-align: center;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  height: 100rpx;
+  margin-rigth: auto;
+}
+.form{
+  border:3rpx solid #eee;
+  border-radius:10rpx;
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  width: 100%;
+  height: 80rpx;
+
+}
+.first-form{
+  border-radius:10rpx;
+  margin-top: 100rpx;
+  border:3rpx solid #eee;
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  width: 100%;
+  height: 80rpx;
+
+}
+.multiform{
+  background: #f7f7f7;
+  height: 80rpx;
+  width: 100%;
+}
+.text-right{
+    background: #aaa; 
+  width: 100rpx;
+  margin-right: auto;
+}
+.text-left{
+
+  width: 100%;
+  margin-left: auto;
+}
+.button-left{
+  width: 100%;
+  margin-left: auto;
+}

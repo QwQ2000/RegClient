@@ -1,2 +1,36 @@
 <!--pages/acc/acc.wxml-->
-<text>pages/acc/acc.wxml</text>
+<view class="name-text">
+  
+    <image src='/res/icons/reg.png' mode='center' class="user-image"></image>
+    
+
+    <view class="user-name">
+      <text>{{name}}</text>
+    </view>
+</view>
+
+      
+      <view class="first-form"  >
+        <text class="text-left">起床时间</text>
+          <view class="text-right">
+           <picker mode="time" value='06:00' start="00:01" end="23:59" bindchange="changegetuptime">
+          {{getuptime}}
+        </picker></view>
+        
+      </view>
+
+    <view class="form">
+      <text class="text-left">入睡时间</text>
+      <view class="text-right">
+      <picker mode="time" value='21:00' start="00:01" end="23:59" bindchange="changegobedtime">
+        {{gobedtime}}
+      </picker></view>
+    </view>
+
+
+<view class='button-left'>
+  <button class="text-left">账户积分</button>
+  <button class="text-left">参赛记录</button>
+  <button class="text-left">版本信息</button>
+</view>
+
