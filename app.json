@@ -2,7 +2,7 @@
   "pages":[
     "pages/acc/acc",
     "pages/reg/reg",
-    
+    "pages/acc/ver/ver",
     "pages/index/index",
     "pages/cont/cont"
   ],

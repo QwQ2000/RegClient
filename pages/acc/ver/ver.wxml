@@ -1,0 +1,11 @@
+<!--pages/acc/ver/ver.wxml-->
+<view class="versionView">
+  <text>版本：{{version}}
+  
+  by
+
+  {{author}}
+
+  {{inf}}
+  </text>
+</view>
