@@ -5,9 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: "技不如人，甘拜下风",
-    version: "0.0000001",
-    author: ["endereye", "QwQ2000","sjwsl","WMDantibirth", "wsytcl"],
+    version:"0.1",
+    author:"qwq\nwmd\nwsy\nwxy\nxts",
     inf:`真的要努力了呀感觉做不完了呀QAQQQ`
   },
 
