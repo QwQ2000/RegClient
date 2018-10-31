@@ -1,4 +1,5 @@
 <!--pages/acc/ver/ver.wxml-->
+<view class="top-bar">版本信息</view>
 <view>
 <text>\n</text>
 <text>\n</text>
