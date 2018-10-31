@@ -1,8 +1,10 @@
 <!--pages/acc/acc.wxml-->
 <view class="yts">
+<view class='titel'>账户</view>
+
 <view class="name-text">
   
-    <image src='{{userInfo.avatarUrl}}' mode='center' class="user-image"></image>
+    <image src='userInfo.avatarUrl' mode='center' class="user-image"></image>
     
 
     <view class="user-name">
@@ -12,6 +14,7 @@
 
       
       <view class="first-form"  >
+        <image src='/res/icons/time.png' mode='center' class='user-icon'></image>
         <text class="text-left">起床时间</text>
           <view class="text-right">
            <picker mode="time" value='06:00' start="00:01" end="23:59" bindchange="changegetuptime">
@@ -21,6 +24,7 @@
       </view>
 
     <view class="form">
+      <image src='/res/icons/time.png' mode='center' class='user-icon'></image>
       <text class="text-left">入睡时间</text>
       <view class="text-right">
       <picker mode="time" value='21:00' start="00:01" end="23:59" bindchange="changegobedtime">
@@ -30,9 +34,8 @@
 
 
 <view class='button-left'>
-  <button class="text-left">账户积分</button>
-  <button class="text-left">参赛记录</button>
-  <button class="text-left" bindtap='onVersion'>版本信息</button>
+  <button class='form'>账户积分</button>
+  <button class='form'>参赛记录</button>
+  <button class='first-form' bindtap='onVersion'>版本信息</button>
 </view>
-
 </view>
