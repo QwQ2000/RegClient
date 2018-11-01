@@ -2,12 +2,10 @@
 <view class="yts">
 <view class="name-text">
   
-    <image src='{{userInfo.avatarUrl}}' mode='center' class="user-image"></image>
+    <open-data type="userAvatarUrl" class="user-image"></open-data>
     
 
-    <view class="user-name">
-      <text>{{userInfo.nickName}}</text>
-    </view>
+    <open-data type="userNickName" class="user-name"></open-data>
 </view>
 
       
