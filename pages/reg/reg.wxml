@@ -1,7 +1,7 @@
 <!--pages/acc/acc.wxml-->
 <!-- welcome.wxml -->
 <view bindtap="goHome" class="warp">
-    <image src="../../images/night.jpg"></image>
+    <image src="../../res/images/night.jpg"></image>
     <text>{{ countDownNumber }}</text> <!-- 倒计时 -->
 </view>
 <view class="yts">
@@ -32,7 +32,7 @@
 
 
 <view class='button-left'>
-  <button class="text-left">\n打卡\n</button>
+  <button class="text-left" bindtap="onReg">\n打卡\n</button>
   
 </view>
 
