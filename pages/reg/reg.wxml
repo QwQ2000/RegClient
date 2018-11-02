@@ -1,0 +1,39 @@
+<!--pages/acc/acc.wxml-->
+<!-- welcome.wxml -->
+<view bindtap="goHome" class="warp">
+    <image src="../../images/night.jpg"></image>
+    <text>{{ countDownNumber }}</text> <!-- 倒计时 -->
+</view>
+<view class="yts">
+<view class="name-text">
+  
+    
+
+    <open-data type="userNickName" class="user-name"></open-data>
+</view>
+
+      
+      <view class="first-form"  >
+        <text class="text-left">\n起床时间\n</text>
+          <view class="text-right">
+           <picker mode="time" value='06:00' start="00:01" end="23:59" bindchange="changegetuptime">
+          {{getuptime}}
+        </picker></view>
+        
+      </view>
+
+    <view class="form">
+      <text class="text-left">\n入睡时间\n</text>
+      <view class="text-right">
+      <picker mode="time" value='21:00' start="00:01" end="23:59" bindchange="changegobedtime">
+        {{gobedtime}}
+      </picker></view>
+    </view>
+
+
+<view class='button-left'>
+  <button class="text-left">\n打卡\n</button>
+  
+</view>
+
+</view>
