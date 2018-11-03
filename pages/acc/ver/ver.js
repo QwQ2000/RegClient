@@ -1,37 +1,21 @@
-// pages/acc/acc.js
-
-const app=getApp()
-
+// pages/acc/ver/ver.js
 Page({
 
   /**
-   * 页面的初始数据1
+   * 页面的初始数据
    */
   data: {
-    getuptime:'6:00',
-    name:'你的名字',
-    gobedtime:'21:30',
-    userInfo:null
+    name: "技不如人，甘拜下风",
+    version: "0.0000001",
+    author: ["endereye", "QwQ2000","sjwsl","WMDantibirth", "wsytcl"],
+    inf:`真的要努力了呀感觉做不完了呀QAQQQ`
   },
-
-changegetuptime:function(){},
-changegobedtime: function () { },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo:app.globalData.userInfo
-      })
-    } else {
-      app.userInfoReadyCallback = res => {
-        this.setData({
-         userInfo: res.userInfo
-        })
-      }
-    }
+  onLoad: function (options) {
+
   },
 
   /**
@@ -45,6 +29,7 @@ changegobedtime: function () { },
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
 
   /**
@@ -80,11 +65,5 @@ changegobedtime: function () { },
    */
   onShareAppMessage: function () {
 
-  },
-
-  onVersion: function () {
-    wx.navigateTo({
-      url: './ver/ver',
-    })
   }
 })

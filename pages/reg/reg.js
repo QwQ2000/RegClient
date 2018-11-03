@@ -7,7 +7,27 @@ Page({
   data: {
 
   },
-
+  onReg: function() {
+    while (1) {
+      if (getApp().globalData.tokenReady) {
+        wx.request({
+          url: 'http://www.endereyewxy.com/api/regserver',
+          data: {
+            token: getApp().globalData.token,
+            method: 'wake'
+          },
+          method: 'POST',
+          success: res => {
+            console.log(res)
+          },
+          fail: res => {
+            console.log(res)
+          }
+        })
+        break
+      }
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
