@@ -1,8 +1,8 @@
-// pages/cont/cont.js
+// pages/acc/acc.js
 Page({
 
   /**
-   * 页面的初始数据
+   * 页面的初始数据1
    */
   data: {
 

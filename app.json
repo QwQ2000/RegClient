@@ -1,43 +1,34 @@
 {
-  "pages": [
+  "pages":[
     "pages/reg/reg",
     "pages/acc/acc",
     "pages/index/index",
     "pages/cont/cont"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle":"black"
   },
-  "tabBar": {
-    "selectedColor": "#000000",
-    "backgroundColor": "#eeeeee",
-    "list": [
-      {
-        "pagePath": "pages/reg/reg",
-        "text": "作息",
-        "iconPath": "./res/icons/reg.png",
-        "selectedIconPath": "./res/icons/regs.png"
-      },
-      {
-        "pagePath": "pages/cont/cont",
-        "text": "比赛",
-        "iconPath": "./res/icons/cont.png",
-        "selectedIconPath": "./res/icons/conts.png"
-      },
-      {
-        "pagePath": "pages/acc/acc",
-        "text": "账户",
-        "iconPath": "./res/icons/acc.png",
-        "selectedIconPath": "./res/icons/accs.png"
-      },
-      {
-        "pagePath":"pages/index/index",
-        "text":"1"
-        
-      }
-    ]
+  "tabBar":{
+    "selectedColor":"#000000",
+    "backgroundColor":"#eeeeee",
+    "list":[{
+      "pagePath":"pages/reg/reg",
+      "text":"作息",
+      "iconPath":"./res/icons/reg.png",
+      "selectedIconPath":"./res/icons/regs.png"
+    },{
+      "pagePath":"pages/cont/cont",
+      "text":"比赛",
+      "iconPath":"./res/icons/cont.png",
+      "selectedIconPath":"./res/icons/conts.png"
+    },{
+      "pagePath":"pages/acc/acc",
+      "text":"账户",
+      "iconPath":"./res/icons/acc.png",
+      "selectedIconPath":"./res/icons/accs.png"
+    }]
   }
 }
