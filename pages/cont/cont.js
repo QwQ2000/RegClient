@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据1
    */
   data: {
-
+    thisMonth:"11",
+    beginDate:"5",
+    endDate:"12",
   },
 
   /**
