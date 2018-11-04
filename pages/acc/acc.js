@@ -14,8 +14,18 @@ Page({
     userInfo:null
   },
 
-changegetuptime:function(){},
-changegobedtime: function () { },
+changegetuptime:function(e){
+  console.log(e)
+  this.setData({
+    getuptime:e.detail.value
+  })
+},
+changegobedtime: function (e) { 
+  console.log(e)
+  this.setData({
+    gobedtime:e.detail.value
+  })
+},
 
   /**
    * 生命周期函数--监听页面加载
