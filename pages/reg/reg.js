@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据1
    */
   data: {
-
+    isNight:true
   },
   onReg: function() {
     while (1) {
@@ -46,7 +46,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      isNight: !this.data.isNight
+    })
   },
 
   /**

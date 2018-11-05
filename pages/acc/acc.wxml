@@ -12,8 +12,8 @@
       <view class="first-form"  >
         <text class="text-left">起床时间</text>
           <view class="text-right">
-           <picker mode="time" value='06:00' start="00:01" end="23:59" bindchange="changegetuptime">
-          {{getuptime}}
+           <picker mode="time" value='06:00' start="05:30" end="08:00" bindchange="changewaketime">
+          {{waketime}}
         </picker></view>
         
       </view>
@@ -21,8 +21,8 @@
     <view class="form">
       <text class="text-left">入睡时间</text>
       <view class="text-right">
-      <picker mode="time" value='21:00' start="00:01" end="23:59" bindchange="changegobedtime">
-        {{gobedtime}}
+      <picker mode="time" value='21:00' start="21:00" end="23:30" bindchange="changebedtime">
+        {{bedtime}}
       </picker></view>
     </view>
 

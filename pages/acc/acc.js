@@ -8,22 +8,22 @@ Page({
    * 页面的初始数据1
    */
   data: {
-    getuptime:'6:00',
+    waketime:'06:00',
     name:'你的名字',
-    gobedtime:'21:30',
+    bedtime:'21:30',
     userInfo:null
   },
 
-changegetuptime:function(e){
+changewaketime:function(e){
   console.log(e)
   this.setData({
-    getuptime:e.detail.value
+    waketime:e.detail.value
   })
 },
-changegobedtime: function (e) { 
+changebedtime: function (e) { 
   console.log(e)
   this.setData({
-    gobedtime:e.detail.value
+    bedtime:e.detail.value
   })
 },
 
@@ -31,17 +31,7 @@ changegobedtime: function (e) {
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo:app.globalData.userInfo
-      })
-    } else {
-      app.userInfoReadyCallback = res => {
-        this.setData({
-         userInfo: res.userInfo
-        })
-      }
-    }
+   
   },
 
   /**

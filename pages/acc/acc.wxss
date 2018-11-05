@@ -1,15 +1,17 @@
 /* pages/acc/acc.wxss */
-page{
+page {
   background-color: #f5f5f5;
 }
-.user-image{
+
+.user-image {
   width:200rpx;
   height: 200rpx;
   margin-left: 20rpx;
   border-radius: 50%;
   overflow: hidden
-}
-.name-text{
+} 
+
+.name-text {
   border:3rpx solid #eee;
   display: flex;
   background: #f7f7f7;
@@ -19,13 +21,15 @@ page{
   height:200rpx; 
   border-radius:10rpx;
 }
-.user-name{
+
+.user-name {
   font-size-adjust: larger;
   display: flex;
   align-items: center;
   margin-left: 20px
 }
-.form{
+
+.form {
   border:3rpx solid #eee;
   border-radius:10rpx;
   display: flex;
@@ -33,9 +37,9 @@ page{
   background: #f7f7f7;
   width: 100%;
   height: 80rpx;
-
 }
-.first-form{
+
+.first-form {
   border-radius:10rpx;
   margin-top: 100rpx;
   border:3rpx solid #eee;
@@ -44,19 +48,21 @@ page{
   background: #f7f7f7;
   width: 100%;
   height: 80rpx;
-
 }
-.multiform{
+
+.multiform {
   background: #f7f7f7;
   height: 80rpx;
   width: 100%;
 }
-.text-right{
-  text-align: right;
-  margin-right: 10px;
 
+.text-right {
+  text-align: right;
+  margin-right: 10rpx;
+  line-height: 0rpx;
 }
-.text-left{
+
+.text-left {
   width: 100%;
   margin-left: auto;
 }
@@ -67,6 +73,6 @@ page{
 }
 
 .yts{
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
 }
