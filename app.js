@@ -15,7 +15,8 @@ App({
           },
           method: "POST",
           success: res2 => {
-            this.globalData.token=res2.data.token
+            console.log(res2)
+            this.globalData.token=res2.data.result.token
             this.globalData.tokenReady=true
           },
           fail: res3 => {

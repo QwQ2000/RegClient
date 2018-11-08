@@ -19,12 +19,34 @@ changewaketime:function(e){
   this.setData({
     waketime:e.detail.value
   })
+  while (1) {
+    if (getApp().globalData.tokenReady) {
+      wx.request({
+        url: 'http://www.endereyewxy.com/api/regserver',
+        data: {
+          token: getApp().globalData.token,
+          method: 'schedule',
+          wake: 'shabi',
+          bed: 'wxynb'
+        },
+        method: 'POST',
+        success: res => {
+          console.log(res)
+        },
+        fail: res => {
+          console.log(res)
+        }
+      })
+      break
+    }
+  }
 },
 changebedtime: function (e) { 
   console.log(e)
   this.setData({
     bedtime:e.detail.value
   })
+
 },
 
   /**

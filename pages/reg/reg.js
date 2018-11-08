@@ -14,7 +14,7 @@ Page({
           url: 'http://www.endereyewxy.com/api/regserver',
           data: {
             token: getApp().globalData.token,
-            method: 'wake'
+            method: 'contest-list'
           },
           method: 'POST',
           success: res => {
@@ -46,16 +46,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      isNight: !this.data.isNight
-    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    
   },
 
   /**
