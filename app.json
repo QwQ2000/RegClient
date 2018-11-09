@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/wait/wait",
     "pages/reg/reg",
     "pages/acc/acc",
     "pages/acc/ver/ver",

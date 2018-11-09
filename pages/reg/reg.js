@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据1
    */
   data: {
-    isNight:true
+    isNight:true,
+    time: null
   },
   onReg: function() {
     //...
@@ -33,25 +34,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    while (1) {
-      if (getApp().globalData.tokenReady) {
-        wx.request({
-          url: 'http://www.endereyewxy.com/api/regserver',
-          data: {
-            token: getApp().globalData.token,
-            method: 'time'
-          },
-          method: 'POST',
-          success: res => {
-            console.log(res)
-          },
-          fail: res => {
-            console.log(res)
-          }
-        })
-        break
-      }
-    }
+    
   },
 
   /**
@@ -65,6 +48,40 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    //虽然很丑，不过这段代码是实时更新时间用的emmmm
+    var that = this
+    var t0 = getApp().globalData.time;
+    var m0 = t0.getMinutes()
+    that.setData({
+      time: t0.getHours() + ":" + t0.getMinutes()
+    })
+    setInterval(function () {
+      var t = getApp().globalData.time
+      that.setData({
+        time: t.getHours() + ":" + t.getMinutes()
+      })
+    }, 1000*60);
+    var h0 = t0.getHours();
+    if (h0 >= 5 && h0 <= 17)
+      that.setData({
+        isNight: false
+      })
+    else
+      that.setData({
+        isNight: true
+      }) 
+    setInterval(function () {
+      var t = getApp().globalData.time
+      var h = t.getHours()
+      if (h >=5 && h<=17)
+        that.setData({
+          isNight: false
+        })
+      else
+        that.setData({
+          isNight: true
+        }) 
+    },1000*60*30)
   },
 
   /**
