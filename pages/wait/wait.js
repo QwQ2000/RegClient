@@ -1,19 +1,11 @@
-// pages/acc/acc.js
+// pages/wait/wait.js
 Page({
 
   /**
-   * 页面的初始数据1
+   * 页面的初始数据
    */
   data: {
-    thisMonth:"11",
-    beginDate:"5",
-    endDate:"12",
-    beginMon1:"1",
-    beginDay1:"1",
-    endMon1:"12",
-    endDay1:"31",
-    an:"???",
-    newMoney:"0",
+
   },
 
   /**
