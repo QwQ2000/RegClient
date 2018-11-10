@@ -1,9 +1,58 @@
 <view class='top-bar'> {{}}比赛
 </view>
+
+<view class='cont-tag'>
+  <view class='cont-font'>
+  <view class='cont-right'>
+    <text>  {{an}}比赛  \n</text>
+    <text class='cont-date'> {{beginMon1}}月{{beginDay1}}日-{{endMon1}}月{{endDay1}}日</text>
+  </view>
+  <view class='cont-left'>
+    <text> 当前奖金: {{newMoney}} </text>
+  
+  </view>
+  </view>
+
+  <button class='cont-button'>
+    我要参赛
+  </button>
+</view>
+<view class='cont-tag'>
+  <view class='cont-font'>
+  <view class='cont-right'>
+    <text>  {{an}}比赛  \n</text>
+    <text class='cont-date'> {{beginMon1}}月{{beginDay1}}日-{{endMon1}}月{{endDay1}}日</text>
+  </view>
+  <view class='cont-left'>
+    <text> 当前奖金: {{newMoney}} </text>
+  
+  </view>
+  </view>
+
+  <button class='cont-button-used'>
+    报名已截止
+  </button>  
+  
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-->
 <view class="nowCont">
     <image src="../../res/images/sunrise.jpg" mode='buttom' class="nowContIma" ></image>  
 </view>
 <!-- 注意考虑比赛日期跨月的情况 变量可能需要修改-->
+<!-->
 <view class='form'>
   <view class='timeStart'>{{thisMonth+"月"+beginDate+"日"}}</view>
   <button class='joinButton'>我要参赛</button>
@@ -13,8 +62,10 @@
     <image src="../../res/images/sunrisedark.jpg" mode='buttom' class="nowContIma" ></image>  
 </view>
 <!-- 注意这里的日期是错的-->
+<!-->
 <view class='form'>
   <view class='timeStart'>{{thisMonth+"月"+beginDate+"日"}}</view>
   <button class='unjoinButton'>我要参赛</button>
   <view class='timeEnd'>{{thisMonth+"月"+endDate+"日"}}</view>
 </view>
+-->

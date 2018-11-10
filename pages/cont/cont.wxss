@@ -10,60 +10,42 @@ page{
   height: 90rpx;
   width: 100%;
 }
-.nowCont{
+
+.cont-tag{
+  border: 2px solid #c2bfbf;
+  height: 255rpx;
+  width: 95%;
+  margin-left: auto;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
   background: #fff;
-  border-radius:10rpx;
-  height: 550rpx;
-  position: relative;
-  width: 100%;
+  border-radius: 20rpx;
 }
-.nextCont{
-  background: #fff;
-  border-radius:40%;
-  height: 250rpx;
-  width: 100%;
+.cont-date{
+  font-size: smaller;
 }
-.form {
-  background: #fff;
-    display: flex;
-    height: 100rpx;
-    width: 100%;
-}
-.timeStart{
-  margin-left: 20rpx;
+.cont-font{
+  
+  margin: 20rpx;
+  
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 200rpx;
-  height: 100rpx; 
 }
-.timeEnd{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20rpx;
-  width: 200rpx;
-  height: 100rpx; 
+.cont-left{
+  margin-top: 20rpx;
+  margin-left: auto;
 }
-.joinButton{
-  background: rgba(228, 56, 3, 0.938);
-  color: rgba(241, 223, 54, 0.938);
-  border-radius: 10rpx;
-  align-content: center;
-  width: 50%;
+.cont-right{
+  margin-top: 20rpx;
+  margin-right: auto;
 }
-.unjoinButton{
-  background:#eee;
-  color: #aaa;
-  border-radius: 10rpx;
-  align-content: center;
-  width: 50%;
+.cont-button{
+  border:6rpx solid rgb(71, 147, 245) ;
+  background: rgb(49, 113, 231);
+  margin-bottom: 0rpx;
 }
-.nowContIma{
-  background: #fff;
-  border-radius:10rpx;
-  height: 100%;
-  position: relative;
-  align-content: center;
-  width: 100%;
+.cont-button-used{
+  border:6rpx solid rgba(118, 119, 117, 0.486) ;
+  background: rgba(80, 80, 80, 0.699);
+  margin-bottom: 0rpx;
 }

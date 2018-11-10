@@ -1,1 +1,9 @@
 /* pages/wait/wait.wxss */
+page{
+  background-image: url('https://s1.ax1x.com/2018/11/10/iqnOaR.jpg');
+  background-size: cover; 
+}
+.fullimages{
+  height: 100%;
+  width: 100%;
+}

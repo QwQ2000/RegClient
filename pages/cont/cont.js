@@ -8,6 +8,12 @@ Page({
     thisMonth:"11",
     beginDate:"5",
     endDate:"12",
+    beginMon1:"1",
+    beginDay1:"1",
+    endMon1:"12",
+    endDay1:"31",
+    an:"???",
+    newMoney:"0",
   },
 
   /**
