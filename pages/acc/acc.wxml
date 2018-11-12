@@ -1,4 +1,7 @@
 <!--pages/acc/acc.wxml-->
+<view class="top-bar">
+账户
+</view>
 <view class="yts">
 <view class="name-text">
   

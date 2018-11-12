@@ -1,4 +1,5 @@
 // pages/acc/acc.js
+const utils = require('../../utils/util.js')
 Page({
 
   /**
@@ -53,12 +54,12 @@ Page({
     var t0 = getApp().globalData.time;
     var m0 = t0.getMinutes()
     that.setData({
-      time: t0.getHours() + ":" + t0.getMinutes()
+      time: utils.formatNumber(t0.getHours()) + ":" + utils.formatNumber(t0.getMinutes())
     })
     setInterval(function () {
       var t = getApp().globalData.time
       that.setData({
-        time: t.getHours() + ":" + t.getMinutes()
+        time: utils.formatNumber(t.getHours()) + ":" + utils.formatNumber(t.getMinutes())
       })
     }, 1000*60);
     var h0 = t0.getHours();

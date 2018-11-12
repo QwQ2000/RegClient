@@ -17,3 +17,13 @@ page{
   background: url('https://s1.ax1x.com/2018/11/04/i52KpD.jpg');
   background-size: cover;
 }
+
+.top-bar{
+  background: rgb(66, 65, 65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  width: 100%;
+}

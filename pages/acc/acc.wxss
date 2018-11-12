@@ -76,3 +76,13 @@ page {
   margin-left: 15rpx;
   margin-right: 15rpx;
 }
+
+.top-bar{
+  background: rgb(66, 65, 65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  width: 100%;
+}
