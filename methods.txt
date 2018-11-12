@@ -1,2 +1,0 @@
-login wake schedule(wake bed) contest-list info
-POST
