@@ -6,7 +6,8 @@ Page({
    */
   data: {
     isNight:true,
-    time: null
+    time: null,
+    sparetime: null,
   },
   onReg: function() {
     //...

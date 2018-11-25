@@ -1,3 +1,5 @@
+
+
 page{
   width:100%;
   height:100%;
@@ -7,13 +9,45 @@ page{
 .yts-night {
   width:100%;
   height:100%;
-  background: url('https://s1.ax1x.com/2018/11/04/i54tSK.jpg');
+  background: url('https://s1.ax1x.com/2018/11/25/FkgzKx.jpg');
   background-size: cover;
 }
 
 .yts-morning {
   width:100%;
   height:100%;
-  background: url('https://s1.ax1x.com/2018/11/04/i52KpD.jpg');
+  background: url('https://s1.ax1x.com/2018/11/25/Fk2PaD.jpg');
   background-size: cover;
+}
+
+.sparetime{
+  font-size:xx-large;
+  background: #fff;
+  opacity:0.5;
+  height: 120rpx;
+  border-radius: 10rpx;
+  display: flex;
+  margin-bottom: 0rpx;
+  align-items: center;
+  justify-content: center;
+}
+.cont-box{
+  height:60%;
+  margin: auto;
+}
+.cont-button{
+  opacity:0.8;
+  height: 100rpx;
+  width: 100%;
+
+}
+.time-font{
+  background: #fff;
+  opacity:0.5;
+  height: 80rpx;
+  border-radius: 10rpx;
+  display: flex;
+  margin-bottom: 0rpx;
+  align-items: center;
+  justify-content: center;
 }

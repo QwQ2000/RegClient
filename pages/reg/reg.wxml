@@ -2,7 +2,38 @@
 <!-- welcome.wxml -->
 <view wx:if="{{isNight}}" class="yts-night">
 <button bindtap="onReg" style="opacity:0.5" >{{time}}</button>
+
+    <view style='margin-top: 40%;'>
+      <text class='time-font' >距离本场比赛结束还有</text>
+      <text class='sparetime' >{{sparetime}}</text>
+    </view>
+
+<view class='cont-box'>
+<button class='cont-button' >
+    我要打卡
+  </button>
+</view>
+  
 </view>
 <view wx:else class="yts-morning">
 <button bindtap="onReg" style="opacity:0.5">{{time}}</button>
+
+<!-->抱歉 只能直接加在原代码里面了<-->
+<view style='margin-top: 40%;'>
+    <view>
+      <text class='time-font' >距离本场比赛结束还有</text>
+      <text class='sparetime'>{{sparetime}}</text>
+    </view>
+
+
+
+  <button class='cont-button' >
+    我要打卡
+  </button>
 </view>
+
+
+</view>
+
+
+
