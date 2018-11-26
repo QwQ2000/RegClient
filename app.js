@@ -4,7 +4,8 @@ App({
     token: "wxynb",
     contests: null,
     info: null,
-    time: new Date()
+    time: new Date(),
+    tokenReady: false
   },
   onLaunch: function () {
     var ready = false

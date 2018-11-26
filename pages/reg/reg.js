@@ -17,7 +17,7 @@ Page({
           url: 'http://www.endereyewxy.com/api/regserver',
           data: {
             token: getApp().globalData.token,
-            method: 'wake'
+            method: this.data.isNight?'sleep':'wake'
           },
           method: 'POST',
           success: res => {
