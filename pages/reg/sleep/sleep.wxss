@@ -1,0 +1,15 @@
+/* pages/reg/sleep/sleep.wxss */
+page{
+  background: url('https://s1.ax1x.com/2018/11/30/Fm3I1S.jpg');
+  background-size: cover;
+}
+.font{
+  background: #fff;
+  opacity:0.6;
+  height: 100rpx;
+  font-size: x-large;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

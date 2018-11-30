@@ -1,6 +1,6 @@
 <!--pages/acc/acc.wxml-->
 <!-- welcome.wxml -->
-<view wx:if="{{isNight}}" class="yts-night">
+<view wx:if="{{isDay}}" class="yts-night">
 <button bindtap="onReg" style="opacity:0.5" >{{time}}</button>
 
     <view style='margin-top: 40%;'>
@@ -11,6 +11,10 @@
 <view class='cont-box'>
 <button class='cont-button' >
     我要打卡
+  </button>
+
+<button class='cont-button' bindtap='toSleep'>
+    进入睡眠
   </button>
 </view>
   

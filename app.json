@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/wait/wait",
     "pages/reg/reg",
+    "pages/wait/wait",
     "pages/acc/acc",
     "pages/acc/ver/ver",
     "pages/index/index",
-    "pages/cont/cont"
-        
+    "pages/cont/cont",
+    "pages/reg/sleep/sleep"
   ],
   "window": {
     "backgroundTextStyle": "light",

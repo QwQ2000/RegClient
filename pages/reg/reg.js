@@ -8,6 +8,7 @@ Page({
     isNight:true,
     time: null,
     sparetime: null,
+    isDay:true,
   },
   onReg: function() {
     //...
@@ -118,5 +119,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  toSleep: function () {
+    wx.navigateTo({
+      url: './sleep/sleep',
+    })
   }
 })
