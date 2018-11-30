@@ -16,13 +16,10 @@ page{
   height: 255rpx;
   width: 95%;
   margin-left: auto;
-  margin-right: auto;
   margin-top: 30rpx;
   margin-bottom: 50rpx;
   background: #fff;
   border-radius: 20rpx;
-  display: flex;
-  flex-direction: column;
 }
 .cont-date{
   font-size: smaller;
@@ -45,12 +42,10 @@ page{
 .cont-button{
   border:6rpx solid rgb(71, 147, 245) ;
   background: rgb(49, 113, 231);
-  margin-bottom: 2rpx;
-  width: 99%;
+  margin-bottom: 0rpx;
 }
 .cont-button-used{
   border:6rpx solid rgba(118, 119, 117, 0.486) ;
   background: rgba(80, 80, 80, 0.699);
-  margin-bottom: 2rpx;
-  width: 99%;
+  margin-bottom: 0rpx;
 }

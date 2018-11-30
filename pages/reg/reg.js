@@ -1,5 +1,4 @@
 // pages/acc/acc.js
-const utils = require('../../utils/util.js')
 Page({
 
   /**
@@ -7,7 +6,9 @@ Page({
    */
   data: {
     isNight:true,
-    time: null
+    time: null,
+    sparetime: null,
+    isDay:true,
   },
   onReg: function() {
     //...
@@ -17,7 +18,7 @@ Page({
           url: 'http://www.endereyewxy.com/api/regserver',
           data: {
             token: getApp().globalData.token,
-            method: this.data.isNight?'sleep':'wake'
+            method: 'wake'
           },
           method: 'POST',
           success: res => {
@@ -54,12 +55,12 @@ Page({
     var t0 = getApp().globalData.time;
     var m0 = t0.getMinutes()
     that.setData({
-      time: utils.formatNumber(t0.getHours()) + ":" + utils.formatNumber(t0.getMinutes())
+      time: t0.getHours() + ":" + t0.getMinutes()
     })
     setInterval(function () {
       var t = getApp().globalData.time
       that.setData({
-        time: utils.formatNumber(t.getHours()) + ":" + utils.formatNumber(t.getMinutes())
+        time: t.getHours() + ":" + t.getMinutes()
       })
     }, 1000*60);
     var h0 = t0.getHours();
@@ -118,5 +119,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  toSleep: function () {
+    wx.navigateTo({
+      url: './sleep/sleep',
+    })
   }
 })

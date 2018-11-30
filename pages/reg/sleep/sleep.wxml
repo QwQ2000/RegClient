@@ -1,0 +1,7 @@
+<!--pages/reg/sleep/sleep.wxml-->
+<view class='font' style='margin-top: 50%;'>
+  明天
+</view>
+<view class='font'>
+  又是新的一天  
+</view>

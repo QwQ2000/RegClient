@@ -1,14 +1,11 @@
-// pages/acc/ver/ver.js
+// pages/reg/sleep/sleep.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name: "技不如人，甘拜下风",
-    version: "0.0000001",
-    author: ["endereye", "QwQ2000","sjwsl","WMDantibirth", "wsytcl"],
-    inf:`真的要努力了呀感觉做不完了呀QAQQQ`
+
   },
 
   /**
