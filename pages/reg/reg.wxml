@@ -1,6 +1,6 @@
 <!--pages/acc/acc.wxml-->
 <!-- welcome.wxml -->
-<view wx:if="{{isDay}}" class="yts-night">
+<view wx:if="{{isNight}}" class="yts-night">
 <button bindtap="onReg" style="opacity:0.5" >{{time}}</button>
 
     <view style='margin-top: 40%;'>
