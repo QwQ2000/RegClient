@@ -1,4 +1,5 @@
 // pages/acc/acc.js
+const util = require('../../utils/util.js')
 Page({
 
   /**
@@ -55,12 +56,12 @@ Page({
     var t0 = getApp().globalData.time;
     var m0 = t0.getMinutes()
     that.setData({
-      time: t0.getHours() + ":" + t0.getMinutes()
+      time: util.formatNumber(t0.getHours()) + ":" + util.formatNumber(t0.getMinutes())
     })
     setInterval(function () {
       var t = getApp().globalData.time
       that.setData({
-        time: t.getHours() + ":" + t.getMinutes()
+        time: util.formatNumber(t.getHours()) + ":" + util.formatNumber(t.getMinutes())
       })
     }, 1000*60);
     var h0 = t0.getHours();
@@ -97,7 +98,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
   },
 
   /**

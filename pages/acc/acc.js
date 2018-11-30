@@ -68,7 +68,11 @@ changebedtime: function (e) {
     }
   }
 },
-
+  onScore: function() {
+    wx.navigateTo({
+      url: './score/score',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
