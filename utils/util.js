@@ -14,7 +14,16 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const schConvert = function(s) {
+  var t = getApp().globalData.time
+  t.setHours(parseInt(s.split(':')[0]))
+  t.setMinutes(parseInt(s.split(':')[1]))
+  t.setSeconds(0)
+  return (t.getTime() / 1000) + 86400
+}
+
 module.exports = {
   formatTime: formatTime,
-  serverTime: serverTime
+  formatNumber: formatNumber,
+  schConvert: schConvert
 }

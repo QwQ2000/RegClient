@@ -1,6 +1,7 @@
 // pages/acc/acc.js
 
 const app=getApp()
+const util = require('../../utils/util.js')
 
 Page({
 
@@ -8,26 +9,35 @@ Page({
    * 页面的初始数据1
    */
   data: {
+<<<<<<< HEAD
     waketime:'06:00',
     name:'你的名字',
     bedtime:'21:30',
+    userInfo:null,
+    userInfo:null,
+    credit:100,
+    rating:1000,
+=======
+    wake:'06:00',
+    sleep:'21:30',
     userInfo:null
+>>>>>>> e78398b8dae93afc41866bd169269a9a6e44417b
   },
 
-changewaketime:function(e){
+onChangeWakeTime:function(e){
   console.log(e)
   this.setData({
-    waketime:e.detail.value
+    wake:e.detail.value
   })
   while (1) {
-    if (getApp().globalData.tokenReady) {
+    if (app.globalData.tokenReady) {
       wx.request({
         url: 'http://www.endereyewxy.com/api/regserver',
         data: {
-          token: getApp().globalData.token,
+          token: app.globalData.token,
           method: 'schedule',
-          wake: 'shabi',
-          bed: 'wxynb'
+          wake: util.schConvert(this.data.wake),
+          sleep: util.schConvert(this.data.sleep)
         },
         method: 'POST',
         success: res => {
@@ -41,20 +51,20 @@ changewaketime:function(e){
     }
   }
 },
-changebedtime: function (e) { 
+onChangeSleepTime: function (e) { 
   console.log(e)
   this.setData({
-    bedtime:e.detail.value
+    sleep:e.detail.value
   })
   while (1) {
-    if (getApp().globalData.tokenReady) {
+    if (app.globalData.tokenReady) {
       wx.request({
         url: 'http://www.endereyewxy.com/api/regserver',
         data: {
-          token: getApp().globalData.token,
+          token: app.globalData.token,
           method: 'schedule',
-          wake: 'shabi',
-          bed: 'wxynb'
+          wake: util.schConvert(this.data.wake),
+          sleep: util.schConvert(this.data.sleep)
         },
         method: 'POST',
         success: res => {
@@ -68,7 +78,11 @@ changebedtime: function (e) {
     }
   }
 },
-
+  onScore: function() {
+    wx.navigateTo({
+      url: './score/score',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -87,6 +101,10 @@ changebedtime: function (e) {
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      wake: app.globalData.info.schWake ? app.globalData.info.schWake: '06:00',
+      sleep: app.globalData.info.schWake ? app.globalData.info.schWake : '21:30'
+    })
   },
 
   /**

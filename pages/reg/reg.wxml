@@ -1,7 +1,13 @@
 <!--pages/acc/acc.wxml-->
 <!-- welcome.wxml -->
+<<<<<<< HEAD
 <view wx:if="{{isDay}}" class="yts-night">
+<text class='time' >{{time}}</text>
+=======
+<view class='top-bar'>作息</view>
+<view wx:if="{{isNight}}" class="yts-night">
 <button bindtap="onReg" style="opacity:0.5" >{{time}}</button>
+>>>>>>> e78398b8dae93afc41866bd169269a9a6e44417b
 
     <view style='margin-top: 40%;'>
       <text class='time-font' >距离本场比赛结束还有</text>
@@ -13,14 +19,11 @@
     我要打卡
   </button>
 
-<button class='cont-button' bindtap='toSleep'>
-    进入睡眠
-  </button>
 </view>
   
 </view>
 <view wx:else class="yts-morning">
-<button bindtap="onReg" style="opacity:0.5">{{time}}</button>
+<text class='time' >{{time}}</text>
 
 <!-->抱歉 只能直接加在原代码里面了<-->
 <view style='margin-top: 40%;'>

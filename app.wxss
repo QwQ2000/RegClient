@@ -8,3 +8,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.top-bar{
+  background: rgb(66, 65, 65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  width: 100%;
+}

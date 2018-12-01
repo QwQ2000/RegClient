@@ -1,6 +1,6 @@
 /* pages/acc/ver/ver.wxss */
 page{
-  background-color: #f5f5f5
+  background-color: url
 }
 .top-bar{
   background: rgb(66, 65, 65);

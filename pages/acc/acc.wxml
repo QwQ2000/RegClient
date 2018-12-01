@@ -1,19 +1,19 @@
 <!--pages/acc/acc.wxml-->
+<view class='top-bar'>账户</view>
 <view class="yts">
 <view class="name-text">
   
     <open-data type="userAvatarUrl" class="user-image"></open-data>
-    
-
     <open-data type="userNickName" class="user-name"></open-data>
+    <text class="user-name" font-weight="900">用户积分：\n 用户排名：</text>
 </view>
 
       
       <view class="first-form"  >
         <text class="text-left">起床时间</text>
           <view class="text-right">
-           <picker mode="time" value='06:00' start="05:30" end="08:00" bindchange="changewaketime">
-          {{waketime}}
+           <picker mode="time" value='06:00' start="05:30" end="08:00" bindchange="onChangeWakeTime">
+          {{wake}}
         </picker></view>
         
       </view>
@@ -21,15 +21,32 @@
     <view class="form">
       <text class="text-left">入睡时间</text>
       <view class="text-right">
-      <picker mode="time" value='21:00' start="21:00" end="23:30" bindchange="changebedtime">
-        {{bedtime}}
+      <picker mode="time" value='21:00' start="21:00" end="23:30" bindchange="onChangeSleepTime">
+        {{sleep}}
       </picker></view>
     </view>
 
+<view class="form">
+      <text class="text-left">账户积分</text>
+      <view class="text-right">
+        <text>{{credit}}</text>
+      </view>
+    </view>
+
+<view class="form">
+      <text class="text-left">参赛记录</text>
+      <view class="text-right">
+      <text>排名：{{rating}}</text>
+       
+      </view>
+    </view>
 
 <view class='button-left'>
-  <button class="text-left">账户积分</button>
+<<<<<<< HEAD
+=======
+  <button class="text-left" bindtap='onScore'>账户积分</button>
   <button class="text-left">参赛记录</button>
+>>>>>>> e78398b8dae93afc41866bd169269a9a6e44417b
   <button class="text-left" bindtap='onVersion'>版本信息</button>
 </view>
 

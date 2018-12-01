@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/reg/reg",
     "pages/wait/wait",
+    "pages/reg/reg",
     "pages/acc/acc",
     "pages/acc/ver/ver",
     "pages/index/index",
