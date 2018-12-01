@@ -5,7 +5,7 @@
   
     <open-data type="userAvatarUrl" class="user-image"></open-data>
     <open-data type="userNickName" class="user-name"></open-data>
-    <text class="user-name" font-weight="900">用户积分：\n 用户排名：</text>
+    
 </view>
 
       
@@ -26,10 +26,22 @@
       </picker></view>
     </view>
 
+<view class="form">
+      <text class="text-left">账户积分</text>
+      <view class="text-right">
+        <text>{{credit}}</text>
+      </view>
+    </view>
+
+<view class="form">
+      <text class="text-left">参赛记录</text>
+      <view class="text-right">
+      <text>排名：{{rank}}</text>
+       
+      </view>
+    </view>
 
 <view class='button-left'>
-  <button class="text-left" bindtap='onScore'>账户积分</button>
-  <button class="text-left">参赛记录</button>
   <button class="text-left" bindtap='onVersion'>版本信息</button>
 </view>
 

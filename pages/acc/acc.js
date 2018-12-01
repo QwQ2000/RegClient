@@ -9,9 +9,11 @@ Page({
    * 页面的初始数据1
    */
   data: {
+    userInfo:null,
+    credit:114514,
+    rank:-1,
     wake:'06:00',
     sleep:'21:30',
-    userInfo:null
   },
 
 onChangeWakeTime:function(e){
@@ -93,7 +95,9 @@ onChangeSleepTime: function (e) {
   onShow: function () {
     this.setData({
       wake: app.globalData.info.schWake ? app.globalData.info.schWake: '06:00',
-      sleep: app.globalData.info.schWake ? app.globalData.info.schWake : '21:30'
+      sleep: app.globalData.info.schWake ? app.globalData.info.schWake : '21:30',
+      credit: app.globalData.info.credit ? app.globalData.info.credit : 114514,
+      rating: app.globalData.info.rank ? app.globalData.info.rank : -1,
     })
   },
 

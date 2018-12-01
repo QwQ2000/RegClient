@@ -6,9 +6,9 @@ Page({
    */
   data: {
     name: "技不如人，甘拜下风",
-    version: "0.0000001",
-    author: ["endereye", "QwQ2000","sjwsl","WMDantibirth", "wsytcl"],
-    inf:`真的要努力了呀感觉做不完了呀QAQQQ`
+    version: "0.0001",
+    author: ["endereye", "QwQ2000","sjwsl","wsytcl"],
+    inf:`最后一天`
   },
 
   /**

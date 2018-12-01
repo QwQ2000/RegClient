@@ -5,8 +5,7 @@
     
     "pages/acc/acc",
     "pages/acc/ver/ver",
-    "pages/cont/cont",
-    "pages/reg/sleep/sleep"
+    "pages/cont/cont"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,42 +1,41 @@
 page{
-  background-color: #f5f5f5;
+  background: url('https://s1.ax1x.com/2018/12/01/Fn0JAO.md.jpg');
+  background-size: cover;
 }
 .cont-tag{
   border: 2px solid #c2bfbf;
-  height: 255rpx;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 240rpx;
+  width: 100%;
   margin-top: 30rpx;
   margin-bottom: 50rpx;
   background: #fff;
-  border-radius: 20rpx;
+  opacity:0.9;
+
 }
 .cont-date{
   font-size: smaller;
 }
-.cont-font{
-  
-  margin: 20rpx;
-  
+.cont-font{  
   display: flex;
   align-items: center;
 }
 .cont-left{
-  margin-top: 20rpx;
-  margin-left: auto;
+  text-align: right;
+  margin-right: 10rpx;
+  width: 200rpx;
 }
 .cont-right{
+  text-align: left;
   margin-top: 20rpx;
   margin-right: auto;
 }
 .cont-button{
   border:6rpx solid rgb(71, 147, 245) ;
   background: rgb(49, 113, 231);
-  margin-bottom: 0rpx;
+  margin-top: 30rpx;
 }
 .cont-button-used{
   border:6rpx solid rgba(118, 119, 117, 0.486) ;
   background: rgba(80, 80, 80, 0.699);
-  margin-bottom: 0rpx;
+  margin-top: 30rpx;
 }

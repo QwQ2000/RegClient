@@ -59,7 +59,8 @@ page {
 .text-right {
   text-align: right;
   margin-right: 10rpx;
-  line-height: 0rpx;
+  width: 500rpx;
+  
 }
 
 .text-left {
