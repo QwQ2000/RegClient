@@ -6,9 +6,9 @@ Page({
    */
   data: {
     name: "技不如人，甘拜下风",
-    version: "0.0001",
+    version: "0.1",
     author: ["endereye", "QwQ2000","sjwsl","wsytcl"],
-    inf:`最后一天`
+    inf:`并没有真的钱。测试版而已。所以只有积分。`
   },
 
   /**

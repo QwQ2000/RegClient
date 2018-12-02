@@ -4,8 +4,8 @@
 <view class='cont-tag'>
   <view class='cont-font'>
   <view class='cont-right'>
-    <text>  {{an}}比赛  \n</text>
-    <text class='cont-date'> {{beginMon1}}月{{beginDay1}}日-{{endMon1}}月{{endDay1}}日</text>
+    <text>  明日比赛 \n</text>
+    <text class='cont-date'> {{month2}}月{{day2}}日</text>
   </view>
   <view class='cont-left'>
     <text> 当前奖金: {{newMoney}} </text>
@@ -13,15 +13,15 @@
   </view>
   </view>
 
-  <button class='cont-button'>
+  <button class='cont-button' bindtap='onToday'>
     我要参赛
   </button>
 </view>
 <view class='cont-tag'>
   <view class='cont-font'>
   <view class='cont-right'>
-    <text>  {{an}}比赛  \n</text>
-    <text class='cont-date'> {{beginMon1}}月{{beginDay1}}日-{{endMon1}}月{{endDay1}}日</text>
+    <text>  今日比赛  \n</text>
+    <text class='cont-date'> {{month1}}月{{day1}}日</text>
   </view>
   <view class='cont-left'>
     <text> 当前奖金: {{newMoney}} </text>

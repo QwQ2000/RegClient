@@ -1,12 +1,12 @@
 const util = require('../../utils/util.js')
-
+const app=getApp()
 Page({
 
   /**
    * 页面的初始数据1
    */
   data: {
-    isNight:true,
+    isNight:false,
     time: new Date(),
     sparetime: null,
     time2:null,
@@ -14,12 +14,13 @@ Page({
   },
   onReg: function() {
     //...
-      if (getApp().globalData.tokenReady) {
+      var that = this
+      if (getApp().globalData.ready) {
         wx.request({
           url: 'http://www.endereyewxy.com/api/regserver',
           data: {
             token: getApp().globalData.token,
-            method: isNight?'sleep':'wake'
+            method: that.data.isNight?'sleep':'wake'
           },
           method: 'POST',
           success: res => {
@@ -49,6 +50,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    if (!app.globalData.info.schWake || typeof app.globalData.info.schWake!="string")
+      app.globalData.info.schWake='06:00'
+    if (!app.globalData.info.schSleep || typeof app.globalData.info.schSleep != "string")
+      app.globalData.info.schSleep = '22:00'
     //虽然很丑，不过这段代码是实时更新时间用的emmmm
     var that = this
     var t0 = getApp().globalData.time;
@@ -65,10 +70,20 @@ Page({
     that.setData({
       time: util.formatNumber(t0.getHours()) + ":" + util.formatNumber(t0.getMinutes())
     })
+    var ret = util.getInfTime2()
+    that.setData({
+      time2:ret.time2,
+      inf:ret.inf
+    })
     setInterval(function () {
       var t = getApp().globalData.time
       that.setData({
         time: util.formatNumber(t.getHours()) + ":" + util.formatNumber(t.getMinutes())
+      })
+      ret = util.getInfTime2()
+      that.setData({
+        time2: ret.time2,
+        inf: ret.inf
       })
     }, 1000*60);
     setInterval(function () {
@@ -117,11 +132,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  toSleep: function () {
-    wx.navigateTo({
-      url: './sleep/sleep',
-    })
   }
 })
